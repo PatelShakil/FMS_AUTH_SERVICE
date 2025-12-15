@@ -1,0 +1,1 @@
+cd D:/ICT/Sem3/MSA/Project/services/auth-service; mvn clean install; java -Duser.timezone=UTC -jar payara.jar  --deploy artifact/auth-service.war   --port 8085   --addJars postgresql.jar   --domainConfig domain.xml

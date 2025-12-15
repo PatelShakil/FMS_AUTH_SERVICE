@@ -1,0 +1,27 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+       
+    <persistence-unit name="authPU" transaction-type="JTA">
+        <jta-data-source>jdbc/authDS</jta-data-source>
+        
+        <!-- List your entities here (we'll add them next) -->
+        <class>com.shakilpatel.auth.entity.User</class>
+        <class>com.shakilpatel.auth.entity.Role</class>
+        <class>com.shakilpatel.auth.entity.UserRole</class>
+        <class>com.shakilpatel.auth.entity.RefreshToken</class>
+        <class>com.shakilpatel.auth.entity.LoginAudit</class>
+        
+        <properties>
+            <!-- Hibernate settings -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.default_schema" value="auth_service"/>
+            
+            <!-- Don't auto-create schema (we created manually) -->
+            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+            <property name="hibernate.jdbc.time_zone" value="Asia/Kolkata"/>
+
+            <!-- Show SQL in logs (dev only) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
