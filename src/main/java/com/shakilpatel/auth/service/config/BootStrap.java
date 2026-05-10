@@ -33,7 +33,7 @@ import org.glassfish.jersey.media.multipart.MultiPartFeature;
                 )
         ),
         servers = {
-            @Server(url = "http://localhost:8085/auth-service", description = "Development")
+            @Server(url = "http://localhost:6001/auth-service", description = "Development")
         },
         security = {
                 @SecurityRequirement(name = "jwt")

@@ -64,8 +64,8 @@ Portions Copyright [2016-2018] [Payara Foundation and/or its affiliates]
         max-pool-size="20"
         steady-pool-size="5"
         statement-timeout-in-seconds="60">
-        <property name="serverName" value="localhost"/>
-        <property name="portNumber" value="3606"/>
+        <property name="serverName" value="boloindia_postgres"/>
+        <property name="portNumber" value="5432"/>
         <property name="databaseName" value="boloindia_dev"/>
         <property name="user" value="boloindia"/>
         <property name="password" value="boloindiapass"/>
