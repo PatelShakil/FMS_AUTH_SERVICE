@@ -1,5 +1,2 @@
 # Project exclude paths
 /target/
-payara.jar
-postgresql.jar
-/artifact/
